@@ -1,0 +1,52 @@
+<!-- Main Carousel -->
+<div id="carouselExample" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000" data-bs-touch="true">
+    <div class="carousel-inner">
+      <div *ngFor="let slide of slides; let i = index" class="carousel-item" [class.active]="i === 0">
+        <img [src]="slide.image" class="d-block w-100" [alt]="slide.alt" />
+      </div>
+    </div>
+  
+    
+   <!-- Controls -->
+<!-- Left Arrow -->
+<button class="carousel-control-prev custom-arrow" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+    <img src="assets/icons/fastforward.png" alt="Previous" class="arrow-img flipped" />
+  </button>
+  
+  <!-- Right Arrow -->
+  <button class="carousel-control-next custom-arrow" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+    <img src="assets/icons/fastforward.png" alt="Next" class="arrow-img" />
+  </button>
+  
+  
+  
+  </div>
+  
+<!-- Thumbnails -->
+<div class="carousel-thumbnails">
+    <img
+      *ngFor="let slide of slides; let i = index"
+      [src]="slide.image"
+      [alt]="slide.alt"
+      class="thumbnail"
+      [class.active]="i === currentSlide"
+      (click)="goToSlide(i)"
+    />
+  </div>
+
+  <!-- Villa Info Section -->
+<section class="villa-info">
+    <h2>Welcome to Villa Inva Korfu</h2>
+    
+    <p>A 10-minute walk from Kavos Beach in Kavos, Villa INVA Korfu features accommodations with access to a hot tub, wellness packages, and beauty services. Among the facilities of this property are a restaurant, a 24-hour front desk, and full-day security, along with free Wifi throughout the property. There's free private parking, and the property provides a paid airport shuttle service.</p>
+
+        <p>Providing a terrace and mountain views, the villa includes 3 bedrooms, a living room, satellite flat-screen TV, an equipped kitchen, and 3 bathrooms with a walk-in shower and a bidet. A private entrance leads guests into the villa, where they can enjoy some wine or champagne and fruit. The villa offers bed linen, towels, and laundry service.</p>
+        
+        <p> Guests at the villa can enjoy a continental or a full English/Irish breakfast. There is a coffee shop, and packed lunches are also available.</p>
+        
+            <p> Yoga classes and fitness classes are organized at the fitness room on site. For guests with children, Villa INVA Korfu offers an indoor play area, outdoor play equipment, and a baby safety gate. Skiing and cycling can be enjoyed nearby, while a bicycle rental service and a private beach area are also available on-site.</p>
+        
+                <p> Arkoudilas Beach is 1.3 miles from the accommodation, while Achilleion Palace is 23 miles away. Corfu International Airport is 30 miles from the property.</p>
+    
+  </section>
+  

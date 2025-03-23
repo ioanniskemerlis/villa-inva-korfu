@@ -1,0 +1,23 @@
+<section class="navbar">
+    <div class="navbar-container">
+      
+      <a href="/" class="logo">VILLA INVA KORFU</a>
+  
+      
+      <div class="menu-toggle" (click)="toggleMenu()">
+        <span [class.open]="isMenuOpen"></span>
+      </div>
+  
+      
+      <nav class="nav-links" [class.active]="isMenuOpen" >
+        <a
+  class="contact-button"
+  href="https://wa.me/+306974970267"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  BOOK NOW
+</a>
+      </nav>
+    </div>
+  </section>
