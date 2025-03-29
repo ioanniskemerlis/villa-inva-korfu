@@ -1,0 +1,129 @@
+.contact-action {
+    position: relative;
+    background: url('../../assets/images/background.jpg') no-repeat center center; 
+    background-size: cover; /* Ensure the image covers the container */
+    background-attachment: fixed; /* Parallax effect: background stays fixed */
+    padding: 6rem 2rem;
+    min-height: 400px;
+    text-align: center;
+  
+    .contact-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 5rem; /* Space between buttons */
+
+    .contact-content {
+      max-width: 600px;
+      margin: 1 auto;
+
+      h2 {
+        font-size: 2rem;
+        font-weight: 700;
+        color: white;
+        margin-bottom: 1rem;
+      }
+
+      p {
+        font-size: 1.4rem;
+        font-weight: 500;
+        color: #f1f1f1;
+        margin-bottom: 0rem;
+      }
+    }
+    
+    .contact-buttons {
+        display: flex; /* Keep buttons side by side */
+        justify-content: center; /* Center buttons horizontally */
+        gap: 2rem; /* Space between buttons */
+        flex-wrap: wrap;
+
+      .contact-button {
+        width: 300px; /* Fixed width for all buttons */
+        min-width: 220px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.75rem; /* Space between icon and text */
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1rem;
+        font-weight: 600;
+        color: rgb(0, 0, 0);
+        padding: 1rem 1.5rem;
+        border: 1px solid rgb(148, 141, 141);
+        border-radius: 50px; /* Rounded button */
+        cursor: pointer;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
+        .button-icon {
+          width: 24px; /* Icon size */
+          height: 24px;
+        }
+  
+        /* WhatsApp Button */
+        &.booking {
+          background-color: #ffffff; /* Button color */
+          box-shadow: 0 4px 6px rgba(37, 211, 102, 0.4);
+  
+          &:hover {
+            background-color: #1ebe57;
+            transform: translateY(-3px);
+            box-shadow: 0 8px 12px rgba(37, 211, 102, 0.6);
+            color: #ffffff;
+          }
+        }
+  
+        /* Google Button */
+        &.check-reviews {
+          background-color: #ffffff; /* Button color */
+          box-shadow: 0 4px 6px rgba(66, 133, 244, 0.4);
+  
+          &:hover {
+            background-color: #357ae8;
+            transform: translateY(-3px);
+            box-shadow: 0 8px 12px rgba(66, 133, 244, 0.6);
+            color: #ffffff;
+          }
+        }
+      }
+    }
+}
+    /* Overlay for readability */
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.3); /* Slight dark overlay */
+      z-index: 0; /* Place behind content */
+    }
+  
+    /* Ensure content stays above background */
+    .contact-container {
+      position: relative;
+      z-index: 1;
+    }
+  
+    /* Responsive Design */
+    @media (max-width: 768px) {
+        height: auto; /* Reduce height for smaller screens */
+        background-position: center bottom; /* Ensure positioning remains consistent */
+      .contact-container {
+        flex-direction: column; /* Stack buttons vertically */
+        gap: 1rem;
+      }
+      
+      .contact-button {
+        font-size: 1rem;
+        padding: 0.75rem 1rem;
+  
+        .button-icon {
+          width: 20px;
+          height: 20px;
+        }
+      }
+    }
+}

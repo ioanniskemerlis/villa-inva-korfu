@@ -1,0 +1,43 @@
+.location-section {
+    
+    text-align: center;
+  
+    h2 {
+      font-family: 'AvantGarde';
+      font-size: clamp(1.5rem, 3vw, 2.5rem);
+      margin-bottom: 1rem;
+      color: #3f559c;
+    }
+  
+    .map-container {
+      margin: 0 auto;
+      max-width: 100%; /* Limit the map width */
+      border: 1px solid #e0e0e0; /* Optional: Add a subtle border */
+      border-radius: 2px; /* Optional: Add rounded corners */
+      overflow: hidden;
+    }
+  
+    iframe {
+      border: none; /* Remove iframe border */
+      width: 100%; /* Make the iframe responsive */
+      height: 450px; /* Default height */
+    }
+  }
+  .btn {
+    display: inline-block;
+    margin-top: 1rem;
+    background-color: #4a7eee;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: clamp(1rem, 2vw, 1.2rem);
+    border: none;
+    border-radius: 5px;
+  
+    &:hover {
+      background-color: #e64a19;
+    }
+  }
+  

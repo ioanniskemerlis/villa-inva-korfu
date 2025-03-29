@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;700&display=swap');
 
 .navbar {
     
@@ -23,19 +24,13 @@
   
   
   .logo {
-    font-family: 'AvantGarde';
+    font-family: 'Montserrat';
     font-weight: 700;
-    font-style: oblique;
     font-size: clamp(1rem, 2vw, 2rem);
     font-feature-settings: 'ss01' 1;
     color: #fbedda;
     text-decoration: none;
   }
-  
-  
-
-  
-  
   
   .contact-button,
 .contact-button:link,
@@ -43,21 +38,20 @@
     display: inline-block;               // Ensures <a> behaves like a button
     text-align: center;
     text-decoration: none;              // Removes underline
-    background-color: #4aee81;
-    font-family: 'AvantGarde';
+    background-color: #4a7eee;
+    font-family: 'Montserrat';
     font-weight: 700;
-    font-style: oblique;
     font-size: clamp(1rem, 2vw, 1.2rem);
     color: #eeeef0;
     border: none;
-    padding: 10px 15px;
+    padding: 0.5rem 1rem;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
   }
   
   .contact-button:hover {
-    background-color: #e78a20;
+    background-color: #e64a19;
   }
   
   
